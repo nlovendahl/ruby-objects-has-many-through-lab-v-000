@@ -19,6 +19,6 @@ class Doctor
   end
 
   def appointments
-
+    Appointment.all.select {|s| s.artist == self}
 
 end
